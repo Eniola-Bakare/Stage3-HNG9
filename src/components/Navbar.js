@@ -4,7 +4,7 @@ import logo from '../assets/logo.png'
 const Navbar = () => {
   return (
     <header>
-        <img src={logo} />
+        <img src={logo} alt='logo image'/>
         <ul>
           <li>Home</li>
           <li>Place to stay</li>

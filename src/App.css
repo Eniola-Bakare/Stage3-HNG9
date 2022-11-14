@@ -62,8 +62,9 @@ header button{
 .hero-section{
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 55px;
   height: 65vh;
+  margin-bottom: 10vh;
 }
 .hero-section .text{
   width: 50%;
@@ -73,6 +74,7 @@ header button{
   justify-content: space-around;
   align-items: flex-start;
   padding: 0px;
+ 
   
 }
 .hero-title{
@@ -147,14 +149,40 @@ display: flex;
 /* hero division */
 .hero-div {
   max-width: 1440px;
-  height: 70px;
+  height: 40px;
   background: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 264px;
-  padding: 10px 100px;
+  padding: 8px 100px;
 }
 .hero-div img{
   height: 30px;
+}
+
+/* landing page main content */
+.landing-title{
+  font-family: 'Red Rose';
+  font-weight: 700;
+  line-height: 60px;
+  font-size: 48px;
+  color: #000000;
+  text-align: center;
+}
+
+/* image List */
+.image-div {
+  display: flex; 
+  justify-content: center; 
+  gap: 14px;
+}
+.image-div img{
+  height: 270px;
+}
+
+.paper{
+  border-radius: 8px;
+  padding: 15px 18px;
+  margin: 10px;
 }

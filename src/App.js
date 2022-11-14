@@ -1,16 +1,10 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection'
-import HeroDivision from './components/HeroDivision'
-import LandingMain from './components/LandingMain';
+import LandingPage from './composition/LandingPage';
 
 function App() {
   return (
     <div className="App">
-     <Navbar />
-     <HeroSection />
-     <HeroDivision />
-     <LandingMain />
+     <LandingPage />
     </div>
   );
 }
