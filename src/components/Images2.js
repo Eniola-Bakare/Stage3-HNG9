@@ -9,7 +9,7 @@ const Images2 = [
     {'link': require('../assets/landing-page-imgs/8.png')},
     {'link': require('../assets/landing-page-imgs/9.png')},
     {'link': require('../assets/landing-page-imgs/10.png')},
-    {'link': require('../assets/landing-page-imgs/11png')},
+    {'link': require('../assets/landing-page-imgs/11.png')},
     {'link': require('../assets/landing-page-imgs/12.png')},
     {'link': require('../assets/landing-page-imgs/13.png')},
     {'link': require('../assets/landing-page-imgs/14.png')},

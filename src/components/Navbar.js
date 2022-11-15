@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 const Navbar = () => {
@@ -6,8 +7,8 @@ const Navbar = () => {
     <header>
         <img src={logo} alt='logo image'/>
         <ul>
-          <li>Home</li>
-          <li>Place to stay</li>
+          <Link to='/'>Home</Link>
+          <Link to='/place-to-stay'>Place to stay</Link>
           <li>NFTs</li>
           <li>Community</li>
         </ul>

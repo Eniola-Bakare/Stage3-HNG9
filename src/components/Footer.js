@@ -7,7 +7,7 @@ const Footer = () => {
         <Stack>
           <img src={require ('../assets/logo-white.png')} alt='logo image' />
           <Stack >
-            <img src={require ('../assets/facebook.png')} alt='facebook logo' />
+            <img src={require ('../assets/fb.png')} alt='facebook logo' />
             <img src={require ('../assets/IG.png')} alt='instagram logo' />
             <img src={require ('../assets/twitter.png')} alt='twitter logo' />
           </Stack>

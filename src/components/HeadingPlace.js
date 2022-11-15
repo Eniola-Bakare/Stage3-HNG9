@@ -3,7 +3,7 @@ import { Stack } from '@mui/system'
 import TuneIcon from '@mui/icons-material/Tune';
 import React from 'react'
 
-const HeadingConnect = () => {
+const HeadingPlace = () => {
   return (
     <Stack >
       <ul>
@@ -16,9 +16,10 @@ const HeadingConnect = () => {
         <li>Off-grid</li>
         <li>Farm</li>
       </ul>
-      <Button variant='contained' endIcon={TuneIcon}>Location</Button>
+      <Button variant='outlined' endIcon={<TuneIcon /> } >Location</Button>
+      {/* <Button variant='contained' endIcon={<TuneIcon />}>Location</Button> */}
     </Stack>
   )
 }
 
-export default HeadingConnect
+export default HeadingPlace
