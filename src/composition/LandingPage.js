@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection'
 import HeroDivision from '../components/HeroDivision'
 import LandingMain from '../components/LandingMain';
 import MainNext from '../components/MainNext'
+import Footer from '../components/Footer';
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
         <HeroDivision />
         <LandingMain />
         <MainNext />
+        <Footer />
     </div>
   )
 }

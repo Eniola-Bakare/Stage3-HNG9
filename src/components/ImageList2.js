@@ -1,8 +1,8 @@
 import { Grid, Paper, Rating, Typography } from '@mui/material'
 import {React, useState} from 'react'
-import Images from './Images'
+import Images2 from './Images2'
 
-const ImageList = () => {
+const ImageList2 = () => {
 
   const [value, setValue] = useState(null)
   console.log({value})
@@ -14,7 +14,7 @@ const ImageList = () => {
     <div>
       <Grid container className='image-div'>
         {
-            Images.map((image, index) => {
+            Images2.map((image, index) => {
               return(
 
                   <Paper key={index} className='paper'>
@@ -43,4 +43,4 @@ const ImageList = () => {
   )
 }
 
-export default ImageList
+export default ImageList2
