@@ -1,11 +1,11 @@
 import { Button } from '@mui/material'
-import { Stack } from '@mui/system'
+
 import TuneIcon from '@mui/icons-material/Tune';
 import React from 'react'
 
 const HeadingPlace = () => {
   return (
-    <Stack >
+    <div className='place-heading' >
       <ul>
         <li>Resturant</li>
         <li>Cottage</li>
@@ -16,9 +16,9 @@ const HeadingPlace = () => {
         <li>Off-grid</li>
         <li>Farm</li>
       </ul>
-      <Button variant='outlined' endIcon={<TuneIcon /> } >Location</Button>
+      <Button variant='outlined' size='large' endIcon={<TuneIcon /> } >Location</Button>
       {/* <Button variant='contained' endIcon={<TuneIcon />}>Location</Button> */}
-    </Stack>
+    </div>
   )
 }
 

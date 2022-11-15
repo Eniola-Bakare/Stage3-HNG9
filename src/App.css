@@ -32,11 +32,13 @@ header img{
 header ul{
   display: flex;
   align-items: flex-start;
-padding: 0px;
-gap: 48px;
+  padding: 0px;
+  gap: 48px;
 }
 header ul li,
-header button{
+header button,
+header ul a{
+  text-decoration: none;
   list-style: none;
   color: var(--secondaryText);
   font-size: 20px;
@@ -161,6 +163,7 @@ display: flex;
   height: 30px;
 }
 
+
 /* landing page main content */
 .landing-title{
   font-family: 'Red Rose';
@@ -172,19 +175,96 @@ display: flex;
 }
 
 /* image List */
+.imageList{
+  max-width: 1440px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 62px;
+}
 .image-div {
   display: flex; 
-  justify-content: center; 
-  gap: 14px;
+  justify-content: center;
+  align-items: center;
 }
 .image-div img{
   height: 270px;
 }
-
+.grid-item{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+}
 .paper{
   border-radius: 8px;
-  padding: 15px 18px;
-  margin: 10px;
+  width: 300px;
+  padding: 25px 12px;
+
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-text{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+}
+
+.image-text p{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #434343;
+}
+.right-text{
+  text-align: right;
+}
+.right-text p:first-child{
+  font-weight: 700;
+}
+
+/* Place to stay sub heading */
+.place-heading{
+  margin-bottom: 70px;
+}
+.place-heading ,
+.place-heading ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 48px;
+}
+.place-heading ul{
+  gap: 48px;
+}
+.place-heading Button{
+  height: 48px;
+  width: 161px;
+  border-radius: 8px;
+  border: 1px solid #B4B4B4 !important;
+  background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  color: #333333;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+}
+.place-heading ul li{
+  list-style: none;
+  font-size: 20px;
+  line-height: 25px;
+  color: #434343;
 }
 
 
@@ -246,9 +326,7 @@ display: flex;
   font-size: 16px;
   line-height: 19px;
 }
-/* .main-next .main-image{
-  width: 50%;
-} */
+
 .main-image img:hover{
   transform: scale(1.2);
   transition: all .25 ease-in-out;
@@ -310,4 +388,125 @@ display: flex;
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
+}
+
+
+/* connect wallet modal */
+.overLay{
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(64, 64, 64, 0.3);
+}
+
+.modal-container{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 600px;
+  height: 420px;
+  left: 420px;
+  top: 347px;
+
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.modal-heading{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  /* gap: 386px; */
+  width: 600px;
+  height: 78px;
+
+  align-self: stretch;
+  border-bottom: 1px solid #CFD8DC;
+
+}
+.modal-heading p{
+  width: 50%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.modal-heading img{
+  width: 24px;
+  height: 24px;
+}
+
+.modal-body{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* height: 80%; */
+  /* justify-content: space-between; */
+  align-items: flex-start;
+  padding: 32px;
+  gap: 16px;
+  width: 600px;
+  height: 310px;
+}
+.modal-body p{
+  color: #333333;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.modal-body div{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 135px;
+
+  width: 536px;
+  height: 68px;
+
+  background: #F8F9FA;
+/* DTC Mid Gray */
+
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+}
+
+.modal-body div section{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  width: 40%;
+  text-align: left;
+}
+
+.modal-body div img{
+  width: 20px;
+  height: 20px;
+}
+.modal-body div section img{
+  width: 44px;
+  height: 44px;
+}
+.modal-body section p{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
 }

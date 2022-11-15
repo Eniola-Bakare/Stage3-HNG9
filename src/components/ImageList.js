@@ -11,29 +11,31 @@ const ImageList = () => {
   }
 
   return (
-    <div>
-      <Grid container className='image-div'>
+    <div className='imageList'>
+      <p className='landing-title'>Inspiration for your next adventure</p>
+      <Grid container className='image-div' rowSpacing={3} >
         {
             Images.map((image, index) => {
               return(
 
+                <Grid item xs={12} sm={6} md={3} className='grid-item'>
                   <Paper key={index} className='paper'>
-                    <Grid item xs={12} sm={6} md={3}>
+
                       <img src={image.link} />
                       {/* <p>{image.name}</p> */}
                       <div className="image-text">
                         <div className="left-text">
-                          <Typography variant='body2'>Desert King</Typography>
-                          <Typography variant='body2' >2345km away</Typography>
+                          <p>Desert King</p>
+                          <p>2345km away</p>
                           <Rating value={value} onChange={handleChange}  />
                         </div>
                         <div className="right-text">
-                        <Typography variant='body2' >1MBT per night</Typography>
-                        <Typography variant='body2' >available for 2weeks stay</Typography>
+                        <p >1MBT per night</p>
+                        <p>available for 2weeks stay</p>
                         </div>
                       </div>
-                    </Grid>
                   </Paper>
+                </Grid>
               
               )
             })
