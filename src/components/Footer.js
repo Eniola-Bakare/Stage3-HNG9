@@ -3,19 +3,19 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <Stack>
-        <Stack>
+    <div className='footer-container' >
+        <Stack spacing={2} className='footer-img'>
           <img src={require ('../assets/logo-white.png')} alt='logo image' />
-          <Stack >
+          <div className='sm-icons'>
             <img src={require ('../assets/fb.png')} alt='facebook logo' />
             <img src={require ('../assets/IG.png')} alt='instagram logo' />
             <img src={require ('../assets/twitter.png')} alt='twitter logo' />
-          </Stack>
+          </div>
           <p><span>&copy;</span> 2022 Metabnb </p>
         </Stack>
-        <Stack>
+        <Stack direction='row' className='footer-link'>
             <ul>
-              <li>Community</li>
+              <li className='footer-li'>Community</li>
               <li>NFT</li>
               <li>Tokens</li>
               <li>Landlords</li>
@@ -23,7 +23,7 @@ const Footer = () => {
             </ul>
 
             <ul>
-              <li>Places</li>
+            <li className='footer-li'>Places</li>
               <li>Castle</li>
               <li>Farms</li>
               <li>Beach</li>
@@ -31,14 +31,14 @@ const Footer = () => {
             </ul>
 
             <ul>
-              <li>About us</li>
+            <li className='footer-li'>About us</li>
               <li>Road map</li>
               <li>Creators</li>
               <li>Career</li>
               <li>Contact us</li>
             </ul>
         </Stack>
-    </Stack>
+    </div>
   )
 }
 
