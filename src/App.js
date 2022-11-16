@@ -1,16 +1,15 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection'
-import HeroDivision from './components/HeroDivision'
-import LandingMain from './components/LandingMain';
+import LandingPage from './composition/LandingPage';
+import PlaceToStay from './composition/PlaceToStay';
 
 function App() {
   return (
     <div className="App">
-     <Navbar />
-     <HeroSection />
-     <HeroDivision />
-     <LandingMain />
+     <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/place-to-stay' element={<PlaceToStay /> } /> 
+     </Routes>
     </div>
   );
 }
