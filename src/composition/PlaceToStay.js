@@ -1,3 +1,4 @@
+import { Stack } from '@mui/system'
 import React from 'react'
 import Footer from '../components/Footer'
 import HeadingConnect from '../components/HeadingPlace'
@@ -6,12 +7,12 @@ import Navbar from '../components/Navbar'
 
 const ConnectPage = () => {
   return (
-    <div>
+    <Stack>
       <Navbar />
       <HeadingConnect />
       <ImageList2 />
       <Footer />
-    </div>
+    </Stack>
   )
 }
 

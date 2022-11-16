@@ -18,7 +18,7 @@ const ImageList = () => {
             Images.map((image, index) => {
               return(
 
-                <Grid item xs={12} sm={6} md={3} className='grid-item'>
+                <Grid item xs={12} sm={6} md={4} lg={3} className='grid-item'>
                   <Paper key={index} className='paper'>
 
                       <img src={image.link} />

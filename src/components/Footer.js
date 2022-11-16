@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
           <p><span>&copy;</span> 2022 Metabnb </p>
         </Stack>
-        <Stack direction='row' className='footer-link'>
+        <div  className='footer-link'>
             <ul>
               <li className='footer-li'>Community</li>
               <li>NFT</li>
@@ -37,7 +37,7 @@ const Footer = () => {
               <li>Career</li>
               <li>Contact us</li>
             </ul>
-        </Stack>
+        </div>
     </div>
   )
 }

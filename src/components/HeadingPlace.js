@@ -6,7 +6,7 @@ import React from 'react'
 const HeadingPlace = () => {
   return (
     <div className='place-heading' >
-      <ul>
+      <ul className='location-list' >
         <li>Resturant</li>
         <li>Cottage</li>
         <li>Castle</li>
@@ -15,9 +15,10 @@ const HeadingPlace = () => {
         <li>Carbins</li>
         <li>Off-grid</li>
         <li>Farm</li>
+
       </ul>
-      <Button variant='outlined' size='large' endIcon={<TuneIcon /> } >Location</Button>
-      {/* <Button variant='contained' endIcon={<TuneIcon />}>Location</Button> */}
+      
+      <Button variant='contained' endIcon={<TuneIcon />}>Location</Button>
     </div>
   )
 }
